@@ -326,7 +326,7 @@ section {
   color: #27AE60;
 }
 
-.mainTitle h2 .statsTitle {
+.mainTitle h2 .bgTitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -511,6 +511,7 @@ section {
 
 .statsTitle::before {
   content: '';
+  position: absolute;
   left: 50%;
   top: 0%;
   width: 40%;
@@ -700,5 +701,80 @@ section {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.blogs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.blogs .blog {
+  position: relative;
+  background-color: #2a2e35;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.blogs .blog:hover {
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.blogs .blog:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.blogs .blog img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.blogs .blog .blogText {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid #27AE60;
+  text-align: left;
+}
+
+.blogs .blog .blogText h4 {
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.blogs .blog .blogText h4:hover {
+  color: #27AE60;
+}
+
+.blogs .blog .blogText p {
+  color: #b2becd;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -262,7 +262,7 @@ section{
         span{
             color: $color-secondary;
         }
-        .statsTitle{
+        .bgTitle{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -393,6 +393,7 @@ section{
     }
 }
 
+
 .statsTitle{
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -401,6 +402,7 @@ section{
     position: relative;
     &::before{
         content: '';
+        position: absolute;
         left: 50%;
         top: 0%;
         width: 40%;
@@ -550,6 +552,62 @@ section{
     opacity: 1;
     transform: scale(1);
     
+
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .blog{
+        position: relative;
+        background-color: $color-grey-5;
+        border-radius: 5px;
+        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        transition: $general-transition;
+        &:hover{
+            box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+            transform: translateY(-5px);
+            transition: $general-transition;
+            img{
+                filter:grayscale(0);
+                transform: scale(1.1);
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
+            }
+        }
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius:5px ;
+            border-top-right-radius:5px ;
+            filter:grayscale(100%);
+            transition: $general-transition;
+
+        }
+        .blogText{
+            margin-top: -7px;
+            padding: 1.1rem;
+            border-top: 8px solid $color-secondary;
+            text-align: left;
+            h4{
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                transition: $general-transition;
+                cursor: pointer;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+            p{
+                color: $color-grey-2;
+                line-height: 2rem;
+                padding-bottom: 1rem;
+                
+            }
+        }
+    }
 
 }
 
