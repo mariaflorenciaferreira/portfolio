@@ -271,7 +271,7 @@ section{
             z-index: -1;
             transform: translate(-50%,-50%);
             font-weight: 800;
-            font-size: 5.5rem;
+            font-size: 5rem;
         }
     }
 }
@@ -606,6 +606,104 @@ section{
                 padding-bottom: 1rem;
                 
             }
+        }
+    }
+}
+
+.contactContentContainer{
+    display: flex;
+    padding-top: 3.5rem;
+    .leftContact{
+        flex: 2;
+        h4{
+            margin-top: 1rem;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+        p{
+            margin: 1rem 0;
+            text-align: left;
+            line-height: 2rem;
+        }
+        .contactInfo{
+            .contactItem{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    margin: 0.3rem 0 !important;
+                    padding: 0 !important;
+                }
+                .icon{
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+                    i{ 
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .contactIcons{
+            display: flex;
+            margin-top: 2rem;
+            a{
+                display: flex;
+                align-items: center;
+                color: $color-white;
+                background-color: $color-grey-5;
+                cursor: pointer;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: $general-transition;
+                &:hover{
+                    background-color: $color-secondary;
+                    i{
+                        color: $color-primary;
+                    }
+                }
+                i{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .rightContact{
+        flex: 3;
+        margin-left: 3rem;
+        .inputControl{
+            margin: 1.5rem 0;
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline-offset: none;
+                border: none;
+                background-color: $color-grey-5;
+                width: 100%;
+                color: $color-white;
+                resize: none;
+            }
+        }
+        .inputC2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+
+        .submitBtn{
+            display: flex;
+            justify-content: flex-start;
         }
     }
 
