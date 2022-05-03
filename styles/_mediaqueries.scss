@@ -1,0 +1,190 @@
+@media screen and (max-width: 600px){
+
+
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        .rightAbout{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .leftAbout{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .aboutStats{
+        .progressBars{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .section{
+        padding: 2rem 2.5rem ;
+    }
+
+    
+    .portfolios{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .blogs{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .contactContentContainer{
+        flex-direction: column;
+        .rightContact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+
+        }
+    }
+
+    .contactContentContainer .rightContact .inputC2{
+        flex-direction: column;
+        
+    }
+    .contactContentContainer .rightContact .inputC2 :last-child{
+        margin-left: 0 ;
+        margin-top: 1.5rem;
+    }
+
+    .mainTitle{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+            .bgTitle{
+                font-size: 2.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1432px){
+    header{
+        padding:0 !important;
+    }
+    .section{
+        padding: 7rem 11rem ;
+    }
+    .contactContentContainer{
+        flex-direction: column;
+        .rightContact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+
+        }
+    }
+
+    .contactContentContainer .rightContact .inputC2{
+        flex-direction: column;
+        
+    }
+    .contactContentContainer .rightContact .inputC2 :last-child{
+        margin-left: 0 ;
+        margin-top: 1.5rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1070px){
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        .rightAbout{
+            padding-top: 2.5rem;
+        }
+
+        
+        .mainTitle{
+            h2{
+                font-size: 4rem;
+                span{
+                    font-size: 4rem;
+                }
+                .bgTitle{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr 1fr;  
+    }
+    .blogs{
+        grid-template-columns: 1fr 1fr;  
+    }
+}
+
+@media screen and (max-width: 970px){
+
+    
+    .controls{
+        top:auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+
+        .control{
+            margin: .6rem 2rem ;
+        }
+
+        .themeBtn{
+            bottom: 30%;
+            right: 9%;
+        }
+    }
+    
+    header{
+        padding:0;
+        
+    }
+
+    header .rightHeader{
+        padding: 0 !important;
+    }
+
+    .hShape{
+        display: none;
+    }
+
+    .rightHeader{
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto;
+
+        .name{
+            font-size: 2.5rem !important;
+        }
+    }
+
+    .headerContent{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .headerContent .leftHeader .image{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .section{
+        padding: 7rem 6rem;
+    }
+}

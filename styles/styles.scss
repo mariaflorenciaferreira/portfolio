@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -61,6 +62,9 @@ header{
     min-height: 100vh;
     color:var(--color-white);
     overflow: hidden;
+    @media screen and (max-width: 610px){
+        min-height: 100vh;
+    }
 }
 
 section{
@@ -157,8 +161,8 @@ section{
 }
 
 .themeBtn{
-    bottom: 15%;
-    right: 3%;
+    bottom: -10%;
+    right: 3.2%;
     cursor: pointer;
     position: fixed;
     display: flex;
@@ -169,7 +173,7 @@ section{
 .themeLabel{
     height: 26px;
     width: 50px;
-    background-color: #111;
+    background-color:var(--color-grey-4);
     display: flex;
     border-radius: 50px;
     align-items: center;
@@ -214,7 +218,7 @@ section{
 .headerContent{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 100%;
+    min-height: 100%;
     .leftHeader{
         display: flex;
         align-items: center;
@@ -780,3 +784,4 @@ section{
 
 }
 
+@import './mediaqueries';
