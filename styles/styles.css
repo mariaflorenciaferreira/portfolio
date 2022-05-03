@@ -1054,10 +1054,6 @@ section {
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .aboutStats .progressBars {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   .section {
     padding: 2rem 2.5rem;
   }
@@ -1211,6 +1207,25 @@ section {
   }
   .section {
     padding: 7rem 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .aboutStats .progressBars {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .mainTitle h2 {
+    font-size: 3rem;
+  }
+  .mainTitle h2 span {
+    font-size: 3rem;
+  }
+  .mainTitle h2 .bgTitle {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

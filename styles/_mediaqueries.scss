@@ -19,11 +19,7 @@
         padding-bottom: 6rem;
     }
 
-    .aboutStats{
-        .progressBars{
-            grid-template-columns: 1fr;
-        }
-    }
+    
 
     .section{
         padding: 2rem 2.5rem ;
@@ -131,7 +127,6 @@
 
 @media screen and (max-width: 970px){
 
-    
     .controls{
         top:auto;
         bottom: 0;
@@ -187,4 +182,30 @@
     .section{
         padding: 7rem 6rem;
     }
+}
+
+@media screen and (max-width: 700px){
+    .section{
+        padding: 7rem 3rem;
+    }
+
+    .aboutStats{
+        .progressBars{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .mainTitle{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 3rem;
+            }
+            .bgTitle{
+                font-size: 4rem;
+            }
+        }
+    }
+
+   
 }
