@@ -142,8 +142,7 @@
         }
 
         .themeBtn{
-            bottom: 30%;
-            right: 9%;
+            position: static ;
         }
     }
     
@@ -152,7 +151,7 @@
         
     }
 
-    header .rightHeader{
+    header .rightHeader {
         padding: 0 !important;
     }
 
@@ -167,20 +166,41 @@
 
         .name{
             font-size: 2.5rem !important;
+            margin-top: 2.5rem;
         }
     }
 
     .headerContent{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
+        
     }
 
-    .headerContent .leftHeader .image{
-        margin: 0 auto;
+    .headerContent .leftHeader {
+        margin: 0rem auto;
+        padding: 0rem;
         width: 90%;
     }
     .section{
         padding: 7rem 6rem;
+    }
+
+    .image{
+    margin: 0 auto ;
+    width: 58%;
+    height: 58%;
+    }
+
+    .mainTitle{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 3rem;
+            }
+            .bgTitle{
+                font-size: 4.5rem;
+            }
+        }
     }
 }
 
@@ -202,7 +222,7 @@
                 font-size: 3rem;
             }
             .bgTitle{
-                font-size: 4rem;
+                font-size: 3rem;
             }
         }
     }

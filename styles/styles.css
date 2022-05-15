@@ -268,7 +268,7 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  min-height: 100%;
+  height: 100vh;
 }
 
 .headerContent .leftHeader {
@@ -588,20 +588,28 @@ section {
   transition: var(--general-transition);
 }
 
-.aboutStats .progressBars .progressBar .progressContainer .progress .html {
-  width: 90%;
+.aboutStats .progressBars .progressBar .progressContainer .progress .fullstack {
+  width: 50%;
 }
 
-.aboutStats .progressBars .progressBar .progressContainer .progress .css {
-  width: 80%;
+.aboutStats .progressBars .progressBar .progressContainer .progress .tecProg {
+  width: 25%;
 }
 
-.aboutStats .progressBars .progressBar .progressContainer .progress .javascript {
-  width: 30%;
+.aboutStats .progressBars .progressBar .progressContainer .progress .hys {
+  width: 100%;
 }
 
-.aboutStats .progressBars .progressBar .progressContainer .progress .react {
-  width: 20%;
+.aboutStats .progressBars .progressBar .progressContainer .progress .bromat {
+  width: 100%;
+}
+
+.aboutStats .progressBars .progressBar .progressContainer .progress .ingles {
+  width: 75%;
+}
+
+.aboutStats .progressBars .progressBar .progressContainer .progress .portugues {
+  width: 75%;
 }
 
 .statsTitle {
@@ -1175,8 +1183,7 @@ section {
     margin: .6rem 2rem;
   }
   .controls .themeBtn {
-    bottom: 30%;
-    right: 9%;
+    position: static;
   }
   header {
     padding: 0;
@@ -1195,18 +1202,34 @@ section {
   }
   .rightHeader .name {
     font-size: 2.5rem !important;
+    margin-top: 2.5rem;
   }
   .headerContent {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .headerContent .leftHeader .image {
-    margin: 0 auto;
+  .headerContent .leftHeader {
+    margin: 0rem auto;
+    padding: 0rem;
     width: 90%;
   }
   .section {
     padding: 7rem 6rem;
+  }
+  .image {
+    margin: 0 auto;
+    width: 58%;
+    height: 58%;
+  }
+  .mainTitle h2 {
+    font-size: 3rem;
+  }
+  .mainTitle h2 span {
+    font-size: 3rem;
+  }
+  .mainTitle h2 .bgTitle {
+    font-size: 4.5rem;
   }
 }
 
@@ -1225,7 +1248,7 @@ section {
     font-size: 3rem;
   }
   .mainTitle h2 .bgTitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
