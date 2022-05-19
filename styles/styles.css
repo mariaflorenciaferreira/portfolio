@@ -295,8 +295,8 @@ section {
 
 .image {
   border-radius: var(--general-border-radius);
-  width: 60%;
-  height: 70%;
+  width: 50%;
+  height: 60%;
   margin-left: 4rem;
   background-color: var(--color-black);
   -webkit-transition: var(--general-transition);
