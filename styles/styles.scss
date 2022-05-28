@@ -839,4 +839,51 @@ section{
 
 }
 
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .contactTitle{
+        margin:1rem 0rem;
+        font-size: 3.3rem;
+        color:var(--color-secondary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .contactText{
+        font-size: 1.8rem;
+        color: var(--color-grey-2);
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .contactHome{
+        i{
+            font-size: 3rem;
+            color:var(--color-grey-2);
+            margin-top: 4rem;
+            transition: var(--general-transition);
+            
+            &:hover{
+            cursor: default;
+            transform: translateY(-5px);
+            }
+        }
+    }
+
+    .homeText{
+        font-size: 1.3rem;
+        color: var(--color-grey-2);
+        margin: 1rem 0rem;
+        &:hover{
+            cursor: default;
+            color: var(--color-secondary);
+        }
+    }
+}
+
 @import './mediaqueries';
