@@ -438,7 +438,8 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 4.5rem;
+  font-size: 4.1rem;
+  width: 45rem;
 }
 
 .aboutContainer {
@@ -1030,13 +1031,74 @@ section {
   margin-left: 1.5rem;
 }
 
-.contactContentContainer .rightContact .submitBtn {
+.contactContentContainer .rightContact .sendBtnContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contactContentContainer .rightContact .sendBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-end;
+          flex-direction: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  border-radius: 30px;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.contactContentContainer .rightContact .sendBtn .btnText {
+  padding: 0 2rem;
+  text-transform: uppercase;
+}
+
+.contactContentContainer .rightContact .sendBtn .btnIcon {
+  background-color: var(--color-secondary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.contactContentContainer .rightContact .sendBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: var(--general-transition);
+  transition: var(--general-transition);
+  z-index: -1;
+}
+
+.contactContentContainer .rightContact .sendBtn:hover {
+  background-color: var(--color-secondary);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: var(--general-transition);
+  transition: var(--general-transition);
 }
 
 @media screen and (max-width: 600px) {
@@ -1100,7 +1162,7 @@ section {
     font-size: 2rem;
   }
   .mainTitle h2 .bgTitle {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1148,7 +1210,7 @@ section {
     font-size: 4rem;
   }
   .aboutContainer .mainTitle h2 .bgTitle {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
   .portfolios {
     -ms-grid-columns: 1fr 1fr;
@@ -1227,7 +1289,7 @@ section {
     font-size: 3rem;
   }
   .mainTitle h2 .bgTitle {
-    font-size: 4.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -1246,7 +1308,7 @@ section {
     font-size: 3rem;
   }
   .mainTitle h2 .bgTitle {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
