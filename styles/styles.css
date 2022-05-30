@@ -289,15 +289,15 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 34% 0, 79% 100%, 0 100%);
+          clip-path: polygon(0 0, 34% 0, 79% 100%, 0 100%);
 }
 
 .image {
   border-radius: var(--general-border-radius);
   width: 50%;
   height: 60%;
-  margin-left: 4rem;
+  margin-left: 6rem;
   background-color: var(--color-black);
   -webkit-transition: var(--general-transition);
   transition: var(--general-transition);
