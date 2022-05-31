@@ -587,8 +587,8 @@ section {
   transition: var(--general-transition);
 }
 
-.aboutStats .progressBars .progressBar .progressContainer .progress .fullstack {
-  width: 50%;
+.aboutStats .progressBars .progressBar .progressContainer .progress .front {
+  width: 100%;
 }
 
 .aboutStats .progressBars .progressBar .progressContainer .progress .tecProg {
