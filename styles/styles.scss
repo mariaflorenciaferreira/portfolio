@@ -269,10 +269,12 @@ section{
         span{
             color: var(--color-secondary);
         }
-        p{
-            margin: 1.5rem 0;
-            line-height:2rem ;
-        }
+        
+    }
+    p{
+        font-size:1.3rem;
+        margin: 1.5rem 0;
+        line-height:2rem ;
     }
 }
 
@@ -405,6 +407,7 @@ section{
     .leftAbout{
         padding-right: 1rem;
         p{
+            font-size: 1.2rem;
             line-height: 2rem;
             padding: 1rem;
             color: var(--color-grey-1);

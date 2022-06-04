@@ -342,7 +342,8 @@ section {
   color: var(--color-secondary);
 }
 
-.rightHeader .name p {
+.rightHeader p {
+  font-size: 1.3rem;
   margin: 1.5rem 0;
   line-height: 2rem;
 }
@@ -518,6 +519,7 @@ section {
 }
 
 .aboutContainer .leftAbout p {
+  font-size: 1.2rem;
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
