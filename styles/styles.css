@@ -490,7 +490,7 @@ section {
 }
 
 .aboutContainer .rightAbout .abtItem .abtText .largeText {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--color-secondary);
 }
@@ -519,7 +519,7 @@ section {
 }
 
 .aboutContainer .leftAbout p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
